@@ -144,10 +144,25 @@ body{
 .main-menu {
   margin-bottom: 19px;
   opacity: 0;
-  max-height: 0;
+  height: 0;
   -moz-transition: opacity .1s, max-height .1s;
   -ms-transition: opacity .1s, max-height .1s;
-  transition: opacity .1s, max-height .1s;
+  transition: opacity .1s ease-out;
+  overflow: hidden;
+}
+
+.sub-menu {
+  opacity: 0;
+  height: 0;
+  -moz-transition: opacity .2s, max-height .2s;
+  -ms-transition: opacity .2s, max-height .2s;
+  transition: opacity 1s ease-out;
+  overflow: hidden;
+}
+
+.expanded {
+   opacity: 1;
+   height: auto;
 }
 
 .main-menu  li {
@@ -216,18 +231,7 @@ body{
   position: relative;
 }
 
-.sub-menu {
-  opacity: 0;
-  max-height: 0;
-  -moz-transition: opacity .2s, max-height .1s;
-  -ms-transition: opacity .2s, max-height .1s;
-  transition: opacity .2s, max-height .1s;
-}
 
-.expanded {
-  max-height: 100%;
-  opacity: 1;
-}
 
 /*Content  -----------------------------------*/
 /*questions----*/
@@ -314,5 +318,6 @@ h2 {
 
   .main-menu {
     opacity: 1;
+    height: auto;
   }
 }

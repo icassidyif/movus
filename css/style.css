@@ -113,8 +113,7 @@ body{
   height: 52px;
   text-decoration: none;
   margin-bottom: 3px;
-  background-size: cover
-
+  background-size: cover;
 }
 
 .benefit:hover {
@@ -132,8 +131,6 @@ body{
   min-width: 70px;
   justify-content: center;
 }
-
-
 
 /*menu______________________________________*/
 
@@ -165,13 +162,7 @@ body{
    height: auto;
 }
 
-.main-menu  li {
-  line-height: 30px;
-  background: #e4e5e9;
-  border-bottom: 1px solid #d7d7d7;   
-  border-top: 1px solid #f4f4f4;
-  padding-left: 13px;
-}
+
 
 .main-menu__opener {
   background: #3f4e86;
@@ -192,30 +183,36 @@ body{
 }
 
 .main-menu  a{
+  display:block;
   text-decoration: none;
   color: #343434;
+  line-height: 30px;
+  background: #e4e5e9;
+  border-bottom: 1px solid #d7d7d7;   
+  border-top: 1px solid #f4f4f4;
+  padding-left: 13px;
 }
 .main-menu  a:hover {
   color: #757474;
 }
 
-.main-menu .is-active  li{
+.main-menu .is-active a{
   background: url("../img/menu-is-active-bg1.png") no-repeat;
   background-size: calc(100% - 10px) 100% ;
   position: relative;
   margin-right: -10px;
   border: none;
-}
-.main-menu .is-active  {
   color: #ffff;
 }
 
-.sub-menu li {
+
+.sub-menu a {
   background: #dae0f7;
   border: none;
+  padding-left: 30px;
 }
 
-.sub-menu li:before {
+.sub-menu a:before {
   content: "";
   position: absolute;
   top: calc(50% - 2.5px);
@@ -227,7 +224,6 @@ body{
 }
 
 .sub-menu  li {
-  padding-left: 30px;
   position: relative;
 }
 
@@ -303,7 +299,7 @@ h2 {
     width: calc(100% / 4 * 3);
   }
 
-  .main-menu .is-active li:after {
+  .main-menu .is-active a:after {
     content: "";
     position: absolute;
     top: 0;

@@ -157,9 +157,11 @@ body{
   overflow: hidden;
 }
 
+
 .expanded {
  opacity: 1;
  height: auto;
+ overflow: visible;
 }
 
 .main-menu__opener {
@@ -268,6 +270,80 @@ h2 {
 }
 
 
+/*icons*/
+
+.sprite {
+    background-image: url("../img/icons.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-exp {
+    width: 32px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-methods {
+    width: 25px;
+    height: 32px;
+    background-position: -47px -5px;
+}
+
+.sprite-reason-calendar {
+    width: 40px;
+    height: 38px;
+    background-position: -82px -5px;
+}
+
+.sprite-reason-light {
+    width: 39px;
+    height: 40px;
+    background-position: -5px -53px;
+}
+
+.sprite-reason-man-circle {
+    width: 26px;
+    height: 40px;
+    background-position: -54px -53px;
+}
+
+.sprite-reason-man-dialog {
+    width: 40px;
+    height: 36px;
+    background-position: -132px -5px;
+}
+
+.sprite-reason-structure {
+    width: 36px;
+    height: 40px;
+    background-position: -132px -51px;
+}
+
+.sprite-reason-time {
+    width: 35px;
+    height: 40px;
+    background-position: -90px -101px;
+}
+
+.sprite-tie {
+    width: 17px;
+    height: 32px;
+    background-position: -135px -101px;
+}
+
+
+/*<i class="sprite sprite-exp"></i>
+<i class="sprite sprite-methods"></i>
+<i class="sprite sprite-reason-calendar"></i>
+<i class="sprite sprite-reason-light"></i>
+<i class="sprite sprite-reason-man-circle"></i>
+<i class="sprite sprite-reason-man-dialog"></i>
+<i class="sprite sprite-reason-structure"></i>
+<i class="sprite sprite-reason-time"></i>
+<i class="sprite sprite-tie"></i>*/
+
+
 
 /*media----------------------------------------*/
 @media (min-width: 450px ) {
@@ -312,7 +388,5 @@ h2 {
     height: auto;
     overflow: visible;
   }
-  .sub-menu {
-    overflow: visible;
-  }
+  
 }

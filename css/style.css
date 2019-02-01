@@ -158,8 +158,8 @@ body{
 }
 
 .expanded {
-   opacity: 1;
-   height: auto;
+ opacity: 1;
+ height: auto;
 }
 
 .main-menu__opener {
@@ -194,7 +194,7 @@ body{
   color: #757474;
 }
 
-.main-menu .is-active a{
+.main-menu .is-active > a{
   background: url("../img/menu-is-active-bg1.png") no-repeat;
   background-size: calc(100% - 10px) 100% ;
   position: relative;
@@ -291,12 +291,10 @@ h2 {
   .benefit {
     margin-bottom: 0;
   }
-
   .column-3-4 {
     width: calc(100% / 4 * 3);
   }
-
-  .main-menu .is-active a:after {
+  .main-menu .is-active > a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -312,5 +310,9 @@ h2 {
   .main-menu {
     opacity: 1;
     height: auto;
+    overflow: visible;
+  }
+  .sub-menu {
+    overflow: visible;
   }
 }
